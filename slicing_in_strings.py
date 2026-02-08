@@ -17,3 +17,8 @@ s1 ,s2,s3 = 30,40,30
 print (name," is ", age," years old and he studies ",subject, hours," hours a day .")
 print (f"{name}  is  {age}  years old and he studies  {subject} {hours}  hours a day .")
 print(f"{name} scored total {s1+s2+s3} marks in all subjects.")
+
+
+###reversing a string
+v1 ="Banikinkar Pani"
+print(v1[::-1])
