@@ -38,7 +38,7 @@ print(fruits)
 fruits.insert(1,'orange')
 print(fruits)
 
-"""
+
 ## extend() remove() pop()
 
 ##append() only adds 1 element where as extend() can add multiple elements
@@ -51,6 +51,24 @@ print(fruits)
 s1= [3,4,7,9,23,11,34,45,60,90,20,19,27,31]
 print(s1.remove(45))
 print(s1)
+
+days_of_week = ["MON","TUE","WED","THU","FRI","SAT","SUN"]
+s1= [3,4,7,9,23,11,34,45,60,90,20,19,27,31]
+days_of_week.reverse()
+print(days_of_week)
+print(days_of_week[::-1])
+s1.sort()
+print( s1) #sorts in ascending order
+s1.sort(reverse=True) #sorts in descending order
+print( s1)
+"""
+s1= [3,4,7,9,23,11,34,0,10,1,0,0,1,19,27,31]
+print(f"The list is {s1}")
+items_to_count = int(input("Enter the number to count from above list :"))
+c1 = s1.count(items_to_count)
+print(f"The occurrence of {items_to_count} in above list is : {c1}")
+
+print("4"  in s1)  # checks strings so False
 
 
 
