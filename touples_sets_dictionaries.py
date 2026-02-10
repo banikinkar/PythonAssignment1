@@ -10,7 +10,7 @@ t3 = [1,2,3,4,5]
 t4 = tuple(t3)
 print(type(t3),type(t4))
 
-"""
+
 ##concatenition repetition membership in tuple
 
 t1 = 100,20,10,10
@@ -24,3 +24,38 @@ total = sum (smallest)
 #print(t1*2+t2*3)
 #print(40 in t1)
 print(t1.count(1),t1.index(10),t1[2]) ## count check, index check and element in index check
+"""
+
+##mutability & immutability
+t1 = 100,20,10,10
+
+fruits = ['apple', 'banana', 'orange']
+#print(id(fruits))
+fruits.append([1,2,3])
+#print(id(fruits),id(t1))
+#print(fruits)
+
+## add(), remove() discard()
+s1 = {2,3,4,8.0,10,11}
+s1.add(11)
+#print(s1)
+s1.remove(3)
+#print(s1)
+s1.discard(50)
+#print(s1)
+
+## mathematical operations
+
+
+
+
+
+
+
+
+
+
+
+
+
+
