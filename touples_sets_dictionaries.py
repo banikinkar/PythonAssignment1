@@ -71,7 +71,7 @@ fs2 = frozenset({20,10.0,30.0,30})
 fs3 = fs1  & s1 & fs2
 print(fs3)
 
-fs1.add(5)
+fs1.add(5) ##attribute error add does  not applicable as it is immutable
 print(fs1)
 
 
