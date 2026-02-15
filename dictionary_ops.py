@@ -39,8 +39,9 @@ student2 ={'John': 15, 'Kapil': 14, 'Rohan': 16, 'Siva': 18, 'marks': {'Maths': 
 ##get function and pop function in dictionaries
 
 student1 = {"name":"John" , "age":30, "subject":"Eng"}
-print(student1.get("percentage",90))
-
+#print(student1.get("percentage",90))
+print(student1.keys(), student1.values())
+print(student1.items(), student1.items())
 
 ###shalow copy, deep copy
 
