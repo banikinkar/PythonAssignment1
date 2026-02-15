@@ -31,9 +31,21 @@ d2 = {(1,2,3): True, 2:False}
 # indexing inside dictionaries, find keys, find Values, find items
 
 subject = {"Maths":50,"Eng":80,"Physics":90,"Chemistry":60,"Maths":80}
-student1 = {"John":15,"Kapil":14,"Rohan":16,"Siva":18}
 student2 ={'John': 15, 'Kapil': 14, 'Rohan': 16, 'Siva': 18, 'marks': {'Maths': 80, 'Eng': 80, 'Physics': 90, 'Chemistry': 60}}
 
-student1["marks"] = subject
-print(student1)
-print(student2['marks'][1])
+#student1["marks"] = subject
+#print(student1)
+#print(student2['marks'][1])
+##get function and pop function in dictionaries
+
+student1 = {"name":"John" , "age":30, "subject":"Eng"}
+print(student1.get("percentage",90))
+
+
+###shalow copy, deep copy
+
+l1= []
+
+
+
+
