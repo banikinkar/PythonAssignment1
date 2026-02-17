@@ -8,6 +8,7 @@ print("Welcome to the game !!\nPlease follow instructions")
 
 while True:
     user_input = input("Press Enter to roll a die or q to exit : ")
+    user_input = user_input.strip()
     if user_input == "q":
       print("Thank you participating! Bye !")
       break
