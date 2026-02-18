@@ -13,10 +13,10 @@ while counter<=10:
     choice = int(input("Guess the number :"))
     if choice not in num:
         print("Oops You guessed Wrong ! Try again ")
-        counter +=1
+
         continue
     else :
         print("congratulation ! the number is present in list")
         break
-    
+counter +=1
 
