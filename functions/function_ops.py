@@ -34,7 +34,17 @@ print(f"Subtraction is {rs2}")
 print(f"Multiplication is {rs3}")
 """
 
-def default_function(a,c,b=10):
+def default_function(a,c=5,b=10):
     return a+b+c
 
+# positional arguments **args ,goes only by position
 print(default_function(6,8))
+##Keyword arguments **kwargs  (specify the argument during call)
+print(default_function(6,b=50))  ## example of **kwargs
+
+
+
+
+
+
+
