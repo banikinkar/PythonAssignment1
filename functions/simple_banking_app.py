@@ -2,6 +2,10 @@
 create a simple banking application with deposit, withdrawal, check balance
 """
 balance = 0
+def check_kyc():
+    pass
+def update_kyc():
+    pass
 
 def check_balance():
     print(f"Your account Balance is Rs{balance}")
@@ -45,19 +49,20 @@ def amount_withdraw(amount):
         print("===================================")
         print()
 
-if __name__ == "__main__":
+if __name__ == '__main__':
+    print("===================================")
     print("Welcome to PSF Bank")
+    print("===================================")
     print()
     while True:
         print("1.Check your Balance")
-        print()
         print("2.Deposit Amount")
-        print()
         print("3.Withdraw Amount")
+        print("4.Check your KYC status")
+        print("5.Update your KYC")
+        print("6.Quit")
         print()
-        print("4.Quit")
-        print()
-        choice = input("Enter your choice :")
+        choice = input("Enter your choice (1-6):")
         if choice == "1":
             check_balance()
         elif choice == "2":
@@ -79,12 +84,15 @@ if __name__ == "__main__":
                 except ValueError:
                     print("Error: That is not a valid amount. Please try again.")
 
-        elif choice == "4":
+        elif choice == "6":
             break
         else:
             print("Invalid Input !! Retry with Correct choice.")
             print()
             # continue
-print("Thank you for Banking with PSF Bank!!")
+
+    print()
+    print("===================================")
+    print("Thank you for Banking with PSF Bank!!\nYou have a Good Day!!")
 
 
