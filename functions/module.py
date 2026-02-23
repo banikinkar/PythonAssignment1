@@ -11,7 +11,7 @@ from math import sqrt
 def add(a, b):
     return a + b
 
-if "__name__" == "__main__":
+if __name__ == "__main__":
     x =10
     y=20
     result = add(x,y)
