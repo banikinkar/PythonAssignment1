@@ -1,0 +1,1 @@
+{'book1': {'subject': 'History', 'author': 'Carol', 'price': 50, 'pages': 100}, 'book2': {'subject': 'Science', 'author': 'Smith', 'price': 66, 'pages': 90}, 'book3': {'subject': 'Math', 'author': 'Steve', 'price': 80, 'pages': 110}, 'book4': {'subject': 'Geography', 'author': 'Jack', 'price': 90, 'pages': 40}}
