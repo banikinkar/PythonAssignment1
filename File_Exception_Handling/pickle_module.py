@@ -26,14 +26,30 @@ with open('books_module.bin', 'bw') as f:
         pickle.dump(books[i], f)
 
 #deserialisation
+Author_list_100page=[]
 with open('books_module.bin', 'rb') as f:
-    data1 = pickle.load(f)
-    print(data1,type(data1))
-    data2 = pickle.load(f)
-    print(data2,type(data2))
-    data3 = pickle.load(f)
-    print(data3,type(data3))
+    # data1 = pickle.load(f)
+    # print(data1,type(data1))
+    # data2 = pickle.load(f)
+    # print(data2,type(data2))
+    # data3 = pickle.load(f)
+    # print(data3,type(data3))
+    # data4 = pickle.load(f)
+    # print(data4,type(data4))
+    # data5 = pickle.load(f)
+    # print(data5,type(data5))
+    while True:
+        try:
+            i = pickle.load(f)
+            # print(i)
+            if  i['pages'] >= 100:
+                    #print(i['author'])
+                    Author_list_100page.append(i['author'])
+        except EOFError:
+            # print("No such value Present")
+            break
 
+print(f"List of authors whose books has more than 100 pages{Author_list_100page}")
 
 
 
