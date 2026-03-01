@@ -18,9 +18,27 @@ import re
 # Learn Meta character , number pattern
 # . matches character except new line character(\n)
 
-message_1 = "house house Address is 63/3, Bangalore-560047 ,flat-A204"
-address_found = re.search("[0-9][0-9].[,]", message_1)
-print(address_found)
-print(message_1[46])
+# message_1 = "house house Address is 63/3, Bangalore-560047 ,flat-A204"
+# address_found = re.search("[0-9][0-9].[,]", message_1)
+# print(address_found)
+# print(message_1[46])
+
+# **learning r character in search
+# \d any digit character \D anything but
+#\s whitespace character
+
+# s1="house house Address is 63/3, Bangalore-560047 ,flat-A204"
+# pattern=r"[0-9][\d]"
+# matchobj = re.search(pattern,s1)
+# print(matchobj)
+
+
+
+text = "House number 63, flat A204"
+obj=re.findall(r"\d", text)
+print(obj, type(obj))
+
+
+
 
 
