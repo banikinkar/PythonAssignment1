@@ -26,3 +26,5 @@ c2=Contact('jack',885894665)
 # print(c1.phonebook)
 # print(c2.phonebook)
 c1.show_all_contact()
+
+Contact.show_all_contact()
