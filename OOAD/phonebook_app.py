@@ -20,6 +20,14 @@ class Contact:
                 #print(f"Name:{contact.name},Phone:{contact.phone}")
                 print(contact.show_contact())
 
+    @classmethod
+    def search_contact(cls,search_name):
+        pass
+
+    @staticmethod
+    def validate_contact(name,phone):
+        pass
+
 c1=Contact('carol',445689523)
 c2=Contact('jack',885894665)
 
