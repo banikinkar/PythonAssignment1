@@ -22,17 +22,32 @@ class Contact:
 
     @classmethod
     def search_contact(cls,search_name):
-        pass
+        for contact in cls.phonebook:
+            if contact.name.lower()==search_name.lower():
+                return contact.phone
+        return f"No contact found in the phone book for {search_name}"
 
     @staticmethod
-    def validate_contact(name,phone):
-        pass
+    def validate_contact(number):
+        if len(number)==0 or len(number)!=10 or number.isdigit():
+            return f"Invalid phone number {number}"
+        else:
+            return True
 
-c1=Contact('carol',445689523)
-c2=Contact('jack',885894665)
+n_contact=int(input("how many contacts do you want to search :"))
+for i in range(n_contact):
+    name=input("enter the name of the contact :")
+    phone=input("enter the contact phone :")
+    if Contact.validate_contact(phone):
+        Contact(name,phone)
+    else:
+        print(f"Invalid phone number {phone}")
+
+# c1=Contact('carol',445689523)
+# c2=Contact('jack',885894665)
 
 # print(c1.phonebook)
 # print(c2.phonebook)
-c1.show_all_contact()
+# c1.search_contact('jack')
 
 Contact.show_all_contact()
